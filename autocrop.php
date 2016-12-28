@@ -67,10 +67,10 @@ function analyse_block( $img, $bx, $by, $blocksize ){
 		for( $i=0; $i<$blocksize; $i++ ){
 			switch( $run ){
 				case 0:
-					$pixel = imagecolorat( $img, intval( $startx + $i ), floor( $starty + $blockSize/2 ) );
+					$pixel = imagecolorat( $img, intval( $startx + $i ), floor( $starty + $blocksize/2 ) );
 					break;
 				case 1:
-					$pixel = imagecolorat( $img, floor( $startx + $blockSize/2 ), intval( $starty + $i ) );
+					$pixel = imagecolorat( $img, floor( $startx + $blocksize/2 ), intval( $starty + $i ) );
 					break;
 				case 2:
 					$pixel = imagecolorat( $img, intval( $startx + $i ), intval( $starty + $i ) );
